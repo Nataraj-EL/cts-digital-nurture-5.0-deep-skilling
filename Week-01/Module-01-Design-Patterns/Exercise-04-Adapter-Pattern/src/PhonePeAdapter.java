@@ -1,6 +1,6 @@
 public class PhonePeAdapter implements PaymentProcessor {
 
-    private PhonePeService phonePeService;
+    private final PhonePeService phonePeService;
 
     public PhonePeAdapter(PhonePeService phonePeService) {
         this.phonePeService = phonePeService;
