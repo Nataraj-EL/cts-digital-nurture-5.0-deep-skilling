@@ -1,6 +1,6 @@
 public class PaytmAdapter implements PaymentProcessor {
 
-    private PaytmService paytmService;
+    private final PaytmService paytmService;
 
     public PaytmAdapter(PaytmService paytmService) {
         this.paytmService = paytmService;
