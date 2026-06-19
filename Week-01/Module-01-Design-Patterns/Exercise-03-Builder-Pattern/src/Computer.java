@@ -1,11 +1,11 @@
 public class Computer {
 
     // Required fields
-    private String cpu;
-    private int ram;          
-    private int storage;     
-    private String gpu;
-    private String os;
+    private final String cpu;
+    private final int ram;          
+    private final int storage;     
+    private final String gpu;
+    private final String os;
 
     // Private constructor - only Builder can create object
     private Computer(Builder builder) {
