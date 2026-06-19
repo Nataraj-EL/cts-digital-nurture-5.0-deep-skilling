@@ -2,7 +2,9 @@
 
 ## Intro
 
-The Adapter Pattern is used when two systems that are not compatible need to work together.
+The Adapter Pattern is a **Structural Design Pattern**.
+
+It is used when two systems that are not compatible need to work together.
 
 In simple terms, it acts like a **bridge between two different interfaces**.
 

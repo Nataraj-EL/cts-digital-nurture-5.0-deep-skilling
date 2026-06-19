@@ -2,7 +2,9 @@
 
 ## Intro
 
-The Decorator Pattern is used to add new functionality to an object dynamically without changing its original code.
+The Decorator Pattern is a **Structural Design Pattern**.
+
+It is used to add new functionality to an object dynamically without changing its original code.
 
 It follows the principle of **composition over inheritance**.
 
