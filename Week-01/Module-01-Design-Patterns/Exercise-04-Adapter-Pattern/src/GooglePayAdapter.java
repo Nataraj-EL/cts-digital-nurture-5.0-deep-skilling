@@ -1,6 +1,6 @@
 public class GooglePayAdapter implements PaymentProcessor {
 
-    private GooglePayService googlePayService;
+    private final GooglePayService googlePayService;
 
     public GooglePayAdapter(GooglePayService googlePayService) {
         this.googlePayService = googlePayService;
