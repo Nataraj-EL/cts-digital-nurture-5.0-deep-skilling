@@ -7,7 +7,7 @@ public class Computer {
     private final String gpu;
     private final String os;
 
-    // Private constructor - only Builder can create object
+    // Private constructor -git push only Builder can create object
     private Computer(Builder builder) {
         this.cpu = builder.cpu;
         this.ram = builder.ram;
