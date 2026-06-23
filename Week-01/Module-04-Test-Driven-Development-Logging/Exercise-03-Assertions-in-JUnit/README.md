@@ -41,6 +41,8 @@ public class AssertionsTest {
     }
 }
 
+```
+
 ## Files in this Exercise
 
 - **pom.xml**  
