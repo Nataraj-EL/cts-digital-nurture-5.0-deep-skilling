@@ -1,70 +1,144 @@
-# Getting Started with Create React App
+# Exercise 04 - React Component Lifecycle Hooks
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Objective
 
-## Available Scripts
+This exercise demonstrates the implementation of React Component Lifecycle methods by fetching data from an external API, rendering it in a class component, and handling runtime errors using lifecycle hooks.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Objectives
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Explain the need and benefits of the Component Lifecycle
+- Identify various Lifecycle Hook methods
+- List the sequence of steps involved in rendering a component
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Hands-on Lab
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+In this hands-on lab, you will learn how to:
 
-### `npm run build`
+- Implement the `componentDidMount()` lifecycle hook
+- Implement the `componentDidCatch()` lifecycle hook
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Prerequisites
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The following software is required to complete this exercise:
 
-### `npm run eject`
+- Node.js
+- npm
+- Visual Studio Code
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Project Description
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Create a React application named **blogapp** that displays a list of blog posts fetched from an external API.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The application includes:
 
-## Learn More
+- A `Post` class to represent blog post data.
+- A `Posts` class component that:
+  - Initializes component state.
+  - Fetches blog posts using the Fetch API.
+  - Loads the data during component mounting.
+  - Displays the blog post title and content.
+  - Handles runtime errors using `componentDidCatch()`.
+- A simple CSS stylesheet to improve the appearance of the application.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Project Structure
 
-### Code Splitting
+```text
+blogapp/
+├── public/
+├── src/
+│   ├── App.js
+│   ├── Post.js
+│   ├── Posts.js
+│   ├── Posts.css
+│   ├── index.js
+│   └── ...
+├── package.json
+└── README.md
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Steps Performed
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Created a React project named **blogapp**.
+2. Created a `Post` class to represent blog data.
+3. Created a `Posts` class component.
+4. Initialized the component state using the constructor.
+5. Implemented the `loadPosts()` method using the Fetch API.
+6. Used `componentDidMount()` to load posts after the component was mounted.
+7. Displayed the fetched posts using the `render()` method.
+8. Implemented `componentDidCatch()` for runtime error handling.
+9. Added simple CSS styling for better presentation.
+10. Rendered the `Posts` component from `App.js`.
+11. Executed the application using `npm start`.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## How to Run
 
-### Advanced Configuration
+Install the required dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```bash
+npm install
+```
 
-### Deployment
+Run the application:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```bash
+npm start
+```
 
-### `npm run build` fails to minify
+Open the application in your browser:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+http://localhost:3000
+```
+
+---
+
+## Expected Output
+
+The application fetches blog posts from:
+
+```text
+https://jsonplaceholder.typicode.com/posts
+```
+
+and displays:
+
+- Blog Post Title
+- Blog Post Content
+
+with a simple styled user interface.
+
+---
+
+## Screenshots
+
+### Browser Output
+
+_Add browser output screenshot here._
+
+### Terminal Output
+
+_Add terminal output showing successful execution (`npm start`)._
+
+---
+
+## Outcome
+
+Successfully implemented a React class component using lifecycle methods. The application retrieves blog posts from an external API using `componentDidMount()`, displays the fetched data, and handles runtime errors using `componentDidCatch()`.
+
+---
+
+**Author:** Nataraj EL
